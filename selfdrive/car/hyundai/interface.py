@@ -184,7 +184,7 @@ class CarInterface(CarInterfaceBase):
     elif candidate == CAR.KIA_K7_YG:
       ret.mass = 1950. * CV.LB_TO_KG
       ret.wheelbase = 2.855
-      ret.steerRatio = 14.4 * 2.71 
+      ret.steerRatio = 14.4 
       tire_stiffness_factor = 0.7
     elif candidate == CAR.KIA_EV6:
       ret.mass = 2055 + STD_CARGO_KG
