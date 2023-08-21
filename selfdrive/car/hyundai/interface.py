@@ -181,6 +181,11 @@ class CarInterface(CarInterfaceBase):
       ret.wheelbase = 2.85
       ret.steerRatio = 13.27  # 2021 Kia K5 Steering Ratio (all trims)
       tire_stiffness_factor = 0.5
+    elif candidate == CAR.KIA_K7_YG:
+      ret.mass = 1950. * CV.LB_TO_KG
+      ret.wheelbase = 2.855
+      ret.steerRatio = 14.4 * 2.71 
+      tire_stiffness_factor = 0.7
     elif candidate == CAR.KIA_EV6:
       ret.mass = 2055 + STD_CARGO_KG
       ret.wheelbase = 2.9
