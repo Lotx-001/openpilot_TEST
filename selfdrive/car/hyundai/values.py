@@ -1904,7 +1904,7 @@ CHECKSUM = {
 
 CAN_GEARS = {
   # which message has the gear
-  "use_cluster_gears": {CAR.ELANTRA, CAR.KONA, CAR.KIA_K7_YG},
+  "use_cluster_gears": {CAR.ELANTRA, CAR.KONA, CAR.K7_YG},
   "use_tcu_gears": {CAR.KIA_OPTIMA_G4, CAR.KIA_OPTIMA_G4_FL, CAR.SONATA_LF, CAR.VELOSTER, CAR.TUCSON},
   "use_elect_gears": {CAR.KIA_NIRO_EV, CAR.KIA_NIRO_PHEV, CAR.KIA_NIRO_HEV_2021, CAR.KIA_OPTIMA_H, CAR.IONIQ_EV_LTD, CAR.KONA_EV, CAR.IONIQ, CAR.IONIQ_EV_2020, CAR.IONIQ_PHEV, CAR.ELANTRA_HEV_2021, CAR.SONATA_HYBRID, CAR.KONA_HEV, CAR.IONIQ_HEV_2022, CAR.SANTA_FE_HEV_2022, CAR.SANTA_FE_PHEV_2022, CAR.IONIQ_PHEV_2019, CAR.KONA_EV_2022, CAR.KIA_K5_HEV_2020},
 }
@@ -1950,7 +1950,7 @@ DBC = {
   CAR.KIA_OPTIMA_G4: dbc_dict('hyundai_kia_generic', None),
   CAR.KIA_OPTIMA_G4_FL: dbc_dict('hyundai_kia_generic', None),
   CAR.KIA_OPTIMA_H: dbc_dict('hyundai_kia_generic', None),
-  CAR.K7_YG: dbc_dict('hyundai_kia_generic', RadarTrack),
+  CAR.K7_YG: dbc_dict('hyundai_kia_generic', None),
   CAR.KIA_SELTOS: dbc_dict('hyundai_kia_generic', None),
   CAR.KIA_SORENTO: dbc_dict('hyundai_kia_generic', None), # Has 0x5XX messages, but different format
   CAR.KIA_STINGER: dbc_dict('hyundai_kia_generic', None),
