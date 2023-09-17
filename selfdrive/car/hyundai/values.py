@@ -243,6 +243,8 @@ CAR_INFO: Dict[str, Optional[Union[HyundaiCarInfo, List[HyundaiCarInfo]]]] = {
   CAR.KIA_SPORTAGE_HYBRID_5TH_GEN: HyundaiCarInfo("Kia Sportage Hybrid 2023", car_parts=CarParts.common([CarHarness.hyundai_n])),
   CAR.KIA_STINGER: HyundaiCarInfo("Kia Stinger 2018-20", video_link="https://www.youtube.com/watch?v=MJ94qoofYw0", car_parts=CarParts.common([CarHarness.hyundai_c])),
   CAR.KIA_STINGER_2022: HyundaiCarInfo("Kia Stinger 2022", "All", car_parts=CarParts.common([CarHarness.hyundai_k])),
+  CAR.K7_YG: HyundaiCarInfo("Kia K7 2016-19", car_parts=CarParts.common([CarHarness.hyundai_c])),
+  CAR.K7_HEV: HyundaiCarInfo("Kia K7 Hybrid 2016-19", car_parts=CarParts.common([CarHarness.hyundai_c])),
   CAR.KIA_CEED: HyundaiCarInfo("Kia Ceed 2019", car_parts=CarParts.common([CarHarness.hyundai_e])),
   CAR.KIA_EV6: [
     HyundaiCarInfo("Kia EV6 (Southeast Asia only) 2022-23", "All", car_parts=CarParts.common([CarHarness.hyundai_p])),
@@ -1279,6 +1281,26 @@ FW_VERSIONS = {
       b'\xf1\x816U2V7051\x00\x00\xf1\x006U2V0_C2\x00\x006U2V7051\x00\x00DCD0T14US1U\x867Z',
     ],
     (Ecu.abs, 0x7D1, None): [b'\xf1\000CD ESC \003 102\030\b\005 58920-J7350', ],
+  },
+  CAR.K7: {
+    (Ecu.fwdCamera, 0x7c4, None): [
+      b'\xf1\000YG MFC  1.00 1.01 95740F6100 170717',
+      b'\xf1\000YG MFC  USA 1.00 1.03 95740F6200 190605',
+    ],
+    (Ecu.fwdRadar, 0x7d0, None): [
+      b'\xf1\x00YG__ SCC F_CUP   1.01 1.01 96400F6000     \xf1\xa01.01',
+      b'\xf1\x00YG__ SCC F_CUP   1.01 1.02 96400F6000     \xf1\xa01.02',
+      b'\xf1\x00YG__ SCC F_CUP   1.00 1.01 99110F6000     \xf1\xa01.01',
+    ],
+    (Ecu.abs, 0x7d1, None): [
+      b'\xf1\x8758920-F6230\xf1\000NC MGH \t 101\031\t\005 58920F6230\xf1\xa01.01',
+    ],
+    (Ecu.eps, 0x7d4, None): [
+      b'\xf1\000YG  MDPS C 1.00 1.00 99800F6563\000 4YGAC100',
+      b'\xf1\000YG  MDPS C 1.00 1.00 E0000F6563\000 4YGSC100',
+      b'\xf1\000YG  MDPS C 1.01 99500F6563\000 4YGDC103',
+      b'\xf1\000YG  MDPS C 1.00 1.01 56310F6350\000 4YG7C101',
+    ],
   },
   CAR.KIA_FORTE: {
     (Ecu.eps, 0x7D4, None): [
