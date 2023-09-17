@@ -239,11 +239,13 @@ class CarInterface(CarInterfaceBase):
       ret.steerRatio = 14.14
     # kia
     elif candidate == CAR.K7_YG:
-      ret.wheelbase = 2.855
-      ret.mass = 1565.
+      ret.mass = 1620.
+      ret.wheelbase = 2.885
+      ret.steerRatio = 14.5
     elif candidate == CAR.K7_HEV:
-      ret.wheelbase = 2.855
-      ret.mass = 1680.
+      ret.mass = 1540.
+      ret.wheelbase = 2.885
+      ret.steerRatio = 14.5
 
     # *** longitudinal control ***
     if candidate in CANFD_CAR:
