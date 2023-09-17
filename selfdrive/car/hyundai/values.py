@@ -1282,7 +1282,7 @@ FW_VERSIONS = {
     ],
     (Ecu.abs, 0x7D1, None): [b'\xf1\000CD ESC \003 102\030\b\005 58920-J7350', ],
   },
-  CAR.K7: {
+  CAR.K7_YG: {
     (Ecu.fwdCamera, 0x7c4, None): [
       b'\xf1\000YG MFC  1.00 1.01 95740F6100 170717',
       b'\xf1\000YG MFC  USA 1.00 1.03 95740F6200 190605',
